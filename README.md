@@ -105,7 +105,7 @@ Any of these work well with .NET:
 
 ---
 
-## How to run this project locally
+## How to run this project locally (Done)
 
 Follow these steps in order.
 
