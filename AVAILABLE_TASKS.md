@@ -121,14 +121,6 @@ core rules only. No database code, no web code, no methods with real behavior.
     Enums do not have methods.
   - **Hint:** `public enum LessonType { Text = 0, Video = 1, Exercise = 2 }`
 
-- **Task 8: Create UserRole Enum**
-  - **Difficulty:** Very Easy
-  - **Labels:** `good first issue`, `layer:domain`, `enum`
-  - **Location:** `TalebElm.Domain/Enums/`
-  - **Instructions:** Create a public enum named `UserRole`. Add three named
-    options: `Student`, `Instructor`, and `Admin`. Give each a number.
-    Enums do not have methods.
-  - **Hint:** `public enum UserRole { Student = 0, Instructor = 1, Admin = 2 }`
 
 
 - **Task 12: Create IRepository Interface**
@@ -292,14 +284,6 @@ several other files. Empty bodies or NotImplementedException are fine.
     `Configure(EntityTypeBuilder<Lesson> builder)` and leave the body empty. No logic.
   - **Hint:** `public class LessonConfiguration : IEntityTypeConfiguration<Lesson> { public void Configure(EntityTypeBuilder<Lesson> builder) { } }`
 
-- **Task 31: Create UserRepository Class**
-  - **Difficulty:** Medium
-  - **Labels:** `layer:infrastructure`, `database`, `interface`
-  - **Location:** `TalebElm.Infrastructure/Repositories/`
-  - **Instructions:** Create a public class named `UserRepository`. It should
-    implement `IUserRepository`. For each interface method, write the signature
-    and throw `NotImplementedException`. Do not write any logic.
-  - **Hint:** `public class UserRepository : IUserRepository { public Task<User?> GetByIdAsync(Guid id) => throw new NotImplementedException(); public Task<IReadOnlyList<User>> GetAllAsync() => throw new NotImplementedException(); public Task AddAsync(User entity) => throw new NotImplementedException(); }`
 
 - **Task 32: Create TrackRepository Class**
   - **Difficulty:** Medium
